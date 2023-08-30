@@ -1,0 +1,30 @@
+.courseGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+/* mobile view */
+@media screen and (max-width: 576px) {
+    .courseGrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .rowContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* Tab  */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .display-home img{
+        height: 100%;
+    }
+    .courseGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
